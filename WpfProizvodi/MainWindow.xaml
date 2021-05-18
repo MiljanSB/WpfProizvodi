@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfProizvodi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfProizvodi"
+        mc:Ignorable="d"
+        Title="MainWindow" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" Height="344.519" Width="351.465">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="12,115,0,0" TextWrapping="Wrap" Text="Kategorija:" VerticalAlignment="Top"/>
+        <ComboBox Name="ComboBoxKategorija" HorizontalAlignment="Left" Margin="88,115,0,0" VerticalAlignment="Top" Width="242"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,10,0,0" TextWrapping="Wrap" Text="Unesite deo naziva proizvoda:" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxPretraga" HorizontalAlignment="Left" Height="23" Margin="184,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" KeyDown="TextBoxPretraga_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,75,0,0" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,157,0,0" TextWrapping="Wrap" Text="Naziv:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,196,0,0" TextWrapping="Wrap" Text="Cena:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,238,0,0" TextWrapping="Wrap" Text="Kolicina:" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxID" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="88,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox x:Name="TextBoxNaziv" HorizontalAlignment="Left" Height="23" Margin="88,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox x:Name="TextBoxCena" HorizontalAlignment="Left" Height="23" Margin="88,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox x:Name="TextBoxKolicina" HorizontalAlignment="Left" Height="23" Margin="88,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <Button x:Name="ButtonResetuj" Content="Resetuj" HorizontalAlignment="Left" Margin="12,280,0,0" VerticalAlignment="Top" Width="75" Click="ButtonResetuj_Click"/>
+        <Button x:Name="ButtonUbaci" Content="Ubaci" HorizontalAlignment="Left" Margin="95,280,0,0" VerticalAlignment="Top" Width="75" Click="ButtonUbaci_Click"/>
+        <Button x:Name="ButtonPromeni" Content="Promeni" HorizontalAlignment="Left" Margin="175,280,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPromeni_Click"/>
+        <Button x:Name="ButtonObrisi" Content="Obrisi" HorizontalAlignment="Left" Margin="255,280,0,0" VerticalAlignment="Top" Width="75" Click="ButtonObrisi_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,42,0,0" TextWrapping="Wrap" Text="Proizvod:" VerticalAlignment="Top"/>
+        <ComboBox Name="ComboBoxProizvod" HorizontalAlignment="Left" Margin="88,42,0,0" VerticalAlignment="Top" Width="242" SelectionChanged="ComboBoxProizvod_SelectionChanged"/>
+
+    </Grid>
+</Window>
